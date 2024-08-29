@@ -4,11 +4,10 @@
   </head>
   <body>
      <h1>Guess The Number</h1>
-    <p>im thinking of a number between 1 to 100.
-      Can you guess it?</p>
+    <p>im thinking of a number between 1 to 100. Can you guess it?</p>
     <input type ="number" placeholder ="Insert Number" id="guess"></input>
     <button onclick="checkGuess()">Sumbit</button>
-    <p id = "result"></p>
+    <p id= "result"></p>
   </body>
   <script>
     let secretNumber = Math.floor(Math.random() * 100) + 1;
@@ -21,9 +20,9 @@
       if (guess == secretNumber)
      {
         resultElement.textContent = "Congrats,betul!"  
-      } 
-      else if (guess > secretNumber) {
-             resultElement.textContent = "Nombor Besar, nombor lebih kecil dari tekaan anda"
+     }
+      else if (guess > secretNumber){
+        resultElement.textContent = "Nombor Besar, nombor lebih kecil dari tekaan anda"
       }
       else{
         resultElement.textContent = "nombor Kecik, nombor lebih kecik dari tekaan anda"
