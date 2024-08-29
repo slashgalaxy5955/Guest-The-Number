@@ -8,15 +8,15 @@
       Can you guess it?</p>
     <input type ="number" placeholder ="Insert Number" id="guess"></input>
     <button onclick="checkGuest()">Sumbit</button>
-    <p id = "Result"></p>
+    <p id = "result"></p>
   </body>
   <script>
-    let secretNumber = Math.Floor(Math.random() * 100) + 1;
+    let secretNumber = Math.floor(Math.random() * 100) + 1;
 
     function  checkGuess(){
 
       let guess = document.gotElementById("guess").value;
-      let resultElement = document.getElementById("Result");
+      let resultElement = document.getElementById("result");
 
       if(guess == secretNumber)
      {
