@@ -8,7 +8,7 @@
       Can you guess it?</p>
     <input type ="number" placeholder ="Insert Number" id="guess"></input>
     <button onclick="checkGuest()">Sumbit</button>
-    <p id = "result">result</p>
+    <p id = "result"></p>
   </body>
   <script>
     let secretNumber = Math.Floor(Math.random() * 100) + 1;
@@ -18,7 +18,7 @@
       let guess = document.gotElementById("guess").value;
       let resultElement = document.getElementById("result");
 
-      if(guess == secretNumber)
+      if(guess = secretNumber)
       {
         result.textContent = "Congrats,betul!"  
       } else if (guess > secretNumber) {
