@@ -7,7 +7,29 @@
     <p>im thinking of a number between 1 to 100.
       Can you guess it?</p>
     <input type ="number" placeholder ="Insert Number" id="guess"></input>
-    <button>Sumbit</button>
-    <p>Rsult</p>
+    <button onclick="checkGuest()">Sumbit</button>
+    <p id = "result"></p>
   </body>
+  <script>
+    let secretNumber = Math.Floor(Math.random() * 100) + 1;
+
+    function  checkGuess(){
+
+      let guess = document.gotElementById("guess").value;
+      let resultElement = document.getElementById("result");
+
+      if(guess == secretNumber)
+      {
+        result.textContent = "Congrats,betul!"  
+      } else if (guess > secretNumber) {
+             resultElement.textContent = "Nombor Besar, nombor lebih kecil dari tekaan anda"
+      }
+      else{
+        resultElement.textContent = "nombor Kecik, nombor lebih kecik dari tekaan anda"
+      }
+
+      
+    }
+  
+  </script>
 </htmll>
